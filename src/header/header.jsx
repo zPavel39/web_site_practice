@@ -1,5 +1,4 @@
 import React from 'react';
-import "./_header";
 
 function Header() {
    return <>
@@ -45,5 +44,4 @@ function Header() {
         </header>
    </>
 }
-
-export default Mouse;
+export default Header;
