@@ -1,0 +1,55 @@
+.schtandart {
+    margin-bottom: 95px;
+    &__info{
+        text-align: center;
+        background-image: url("/img/schtandart_background.png");
+        background-repeat: no-repeat;
+        margin-bottom: 50px;
+        &-logo {
+            margin: 35px 0 54px 0;
+        }
+        .info-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            &__blocks {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    height: 97px;
+                    width: 97px;
+                    margin: 0 70px 45px 70px;
+                }
+                span {
+                    max-width: 173px ;
+                    color: $color-white;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin-bottom: 50px;
+                }
+            }
+        }    
+    }
+    &__button{
+        display: flex;
+        justify-content:space-around;
+        align-items: center;
+        margin: 0 auto;
+        font-weight: 700;
+        font-size: 13px;
+        color: $color-white;
+        background: $color-blue;
+        border-radius: 3px;
+        height: 40px;
+        width: 169px;
+        padding: 12px;
+    }
+    @media screen and (max-width: 1185px) {
+        &__info {
+            margin: 0 56px 50px 56px;
+            background-image: url("/img/schtandart_background2.png");
+        }
+    }
+}

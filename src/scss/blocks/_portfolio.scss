@@ -1,0 +1,30 @@
+.portfolio {
+    background-color: $color-white;
+    &__title {
+        @include title-section;
+        padding: 48px;
+    }
+    &__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0px 101px 70px 101px;
+        gap: 45px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:1200px) {
+    .portfolio {
+        width: 85%;
+        &__image {
+            padding: 0 auto;
+            gap: 20px;
+            li {
+                &:last-child {
+                display: none;
+                }
+            }
+        }
+    }
+}

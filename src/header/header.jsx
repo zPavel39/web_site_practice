@@ -1,12 +1,16 @@
 import React from 'react';
-
+import '../scss/App.scss';
+import header_logo from '../img/logo.png';
+import header_burger from '../img/header_burger.svg';
+import header_btn1 from '../img/btn1-icon.svg';
+import header_btn2 from '../img/btn2-icon.svg';
 function Header() {
    return <>
         <header class="header">
             <div class="header-container head container">
                 <div>
-                    <img src="./img/header_burger.svg" class="head__burger" alt="Menu" />
-                    <img src="/img/logo.png" class="head__logo" />
+                    <img src={header_burger} class="head__burger" alt="Menu" />
+                    <img src={header_logo} class="head__logo" />
                 </div>
                 <nav class="header__menu menu">
                     <ul class="menu__list">
@@ -32,11 +36,11 @@ function Header() {
                 </nav>
                 <div class="head__buttons">
                     <button class="button1 ">
-                        <img src="/img/btn1-icon.svg" />
+                        <img src={header_btn1} />
                         <span class="text-button">Заявка на замер</span>
                     </button>
                     <button class="button2 ">
-                        <img src="/img/btn2-icon.svg" />
+                        <img src={header_btn2} />
                         <span class="text-button">Заказать расчет</span>
                     </button>
                 </div>

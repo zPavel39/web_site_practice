@@ -1,0 +1,74 @@
+.accordion {
+    background-color: $color-orange;
+    width: 100%;
+    border-radius: 7px;
+    text-align: center;
+    padding: 50px 0 49px 0;
+    margin-bottom: 86px;
+    &__title {
+        @include title-section;
+        color: $color-white;
+        padding-bottom: 49px;
+    }
+    &__block {
+        margin-bottom: 14px;
+        &-btn {
+            background-color: $color-body;
+            border-radius: 3px;
+            color: $color-text_blue;
+            cursor: pointer;
+            padding: 16px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: 0.5s;
+            width: 85%;
+            &:hover {
+                color: $color-orange;
+                background-color: $color-white;
+            }
+            &:after {
+                content: url("/img/accordion_bottom.svg");
+                color: $color-text_blue;
+                margin-right: 14px;
+                align-items: center;
+                font-size: 18px;
+                font-weight: bold;
+                float: right;
+            }
+        }
+        .active {
+            color: $color-orange;
+            background-color: $color-white;
+            border-radius:3px 3px 0 0;
+            &:after {
+                content: url("/img/accordion_top.svg");
+            }
+        }
+        &-panel {
+            font-size: 18px;
+            width: 85%;
+            margin: 0 auto;
+            color: #212121;
+            background-color: $color-white;
+            border-radius:0 0 3px 3px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            text-align: left;
+            .text {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                margin-left: 18px ;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+@media screen and (max-width:1200px) {
+    .accordion {
+        width: 85%;
+    }
+}

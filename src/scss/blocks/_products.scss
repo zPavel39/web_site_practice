@@ -1,0 +1,99 @@
+.products {
+    max-width: 1145px;
+    margin-bottom: 54px;
+    &__title {
+        @include title-section;
+    }
+    &__type {
+        display: flex;
+        justify-content: space-around;
+        margin: 42px 0 37px 0;
+        li{
+            button{
+                font-family: 'Roboto', sans-serif;
+                font-size: 17px;
+                color: $color-text_blue;
+                background-color: $color-body;
+                padding: 10px 25px;
+                border-radius: 3px;
+            }
+            :hover {
+                background-color: $color-orange;
+                color: $color-body;
+                transition: all 0.3s 0.3s;
+            }
+        }
+    }
+    &__main{
+        display: flex;
+        background-color:$color-white;
+        &-image {
+            width: 50%;
+        }
+        .main-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 50%;
+            margin: 74px 32px 52px 34px;
+            &__title {
+                font-weight: 700;
+                font-size: 36px;
+                color: $color-orange;
+            }
+            &__info {
+                font-size: 18px;
+            }
+            &__list {
+                li {
+                    font-size: 16px;
+                    display: flex;
+                    position: relative;
+                    justify-content: space-between;
+                    align-items: c;
+                    font-weight: bold;
+                    margin-bottom: 8px;
+                    width: 100%;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        border-bottom: 1px dotted;
+                        width: 100%;
+                        right: 0;
+                        bottom: 0;
+                    }
+                    p{
+                        position: relative;
+                        background-color:$color-white;
+                        z-index: 1;
+                        &:last-child {
+                            font-size: 18px;
+                            color: $color-text_blue;
+                            width: 125px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:920px ) {
+    .products {
+        margin: 0 56px 60px 56px;
+        &__main{
+            &-image {
+                width: 40%;
+            }
+            .main-content{
+                width: 60%;
+                margin: 74px 10px 22px 25px;
+                &__title {
+                    margin-bottom:30px;
+                }
+                &__list {
+                    margin-bottom:30px;
+                }
+            }
+        }
+    }
+}

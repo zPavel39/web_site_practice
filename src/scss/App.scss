@@ -1,0 +1,27 @@
+$color-orange: #EF7F04;
+$color-blue: #3B3A63;
+$color-black: #000000;
+$color-white: #FFFFFF;
+$color-body: #F2F2F2;
+$color-input: #E2E2E2;
+$color-text_blue: #2F2F51;
+@mixin title-section {
+    text-align: center;
+    color: $color-text_blue;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+@import "./nullstyle/nullstyle";
+@import "./blocks/container";
+@import "../header/header";
+@import "./blocks/main";
+@import "./blocks/our-services";
+@import "./blocks/products";
+@import "./blocks/schtandart";
+@import "./blocks/about";
+@import "./blocks/portfolio";
+@import "./blocks/accordion";
+@import "./blocks/footer";
+
+
