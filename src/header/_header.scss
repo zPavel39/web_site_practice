@@ -1,0 +1,95 @@
+
+.header {
+    background-color: $color-white;
+    width: 100%;
+    padding: 15px 0;
+    .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &__burger {
+            display: none;
+            height: 56px;
+            width: 35px;
+        }
+        &__logo {
+            height: 89,5px;
+            width: 63px;
+        }
+        &__buttons {
+            display: flex;
+            justify-content:space-between;
+            .button1 {
+                display: flex;
+                justify-content:space-around;
+                align-items: center;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 13px;
+                color: $color-white; 
+                background: $color-orange;
+                border-radius: 3px;
+                height: 40px;
+                width: 169px;
+                margin-right: 14px;
+                padding: 12px;
+                }
+            .button2 {
+                display: flex;
+                justify-content:space-around;
+                align-items: center;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 13px;
+                color: $color-white;
+                background: $color-blue;
+                border-radius: 3px;
+                height: 40px;
+                width: 169px;
+                margin-right: 14px;
+                padding: 12px;
+            }
+        } 
+    }
+    @media screen and (max-width:1070px ) {
+        .head {
+            justify-content: space-between;
+            &__burger {
+                display:inline;
+                margin-left: 14px;
+            }
+            &__logo {
+                margin-left: 44px;
+            }
+        }
+    }
+    @media screen and (max-width:920px ) {
+        .header {
+            padding: 15px 48px;
+        }
+    }
+}
+
+
+.menu {
+    &__list {
+        display: flex;
+    }
+    &__item {
+        margin-right: 22px;
+        padding-top: 0;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        line-height: 19px;
+        color: $color-orange;
+        :hover {
+            color: $color-orange;
+        }
+    }
+    @media screen and (max-width:1070px ) {
+        &__list {
+            display: none;
+        }
+    }
+}
