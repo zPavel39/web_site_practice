@@ -10,7 +10,7 @@ function Header() {
             <div class="header-container head container">
                 <div>
                     <img src={header_burger} class="head__burger" alt="Menu" />
-                    <img src={header_logo} class="head__logo" />
+                    <img src={header_logo} class="head__logo" alt="Menu" />
                 </div>
                 <nav class="header__menu menu">
                     <ul class="menu__list">
@@ -36,11 +36,11 @@ function Header() {
                 </nav>
                 <div class="head__buttons">
                     <button class="button1 ">
-                        <img src={header_btn1} />
+                        <img src={header_btn1} alt="btn1" />
                         <span class="text-button">Заявка на замер</span>
                     </button>
                     <button class="button2 ">
-                        <img src={header_btn2} />
+                        <img src={header_btn2} alt="btn2" />
                         <span class="text-button">Заказать расчет</span>
                     </button>
                 </div>
