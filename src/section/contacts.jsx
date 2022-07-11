@@ -59,7 +59,7 @@ function Contacts() {
                         <input class="checkbox" type="checkbox" />
                         <p>
                             Я согласен(на) на обработку
-                            <a class="link" href="#">персональных данных</a>
+                            <a class="link" href="#"> персональных данных</a>
                         </p>
                     </div>
                     <button class="contacts__form-button">Отправить заявку</button>

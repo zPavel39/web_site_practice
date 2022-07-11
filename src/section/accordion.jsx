@@ -18,7 +18,7 @@ for (i = 0; i < acc.length; i++) {
 
 function Accordion() {
     return <>
-                <section class="accordion container">
+            <section class="accordion container">
             <h2 class="accordion__title">Вопрос-ответ</h2>
             <div class="accordion__block">
                 <button class="accordion__block-btn">Сколько по времени занимает изготовление пластиковых окон?</button>
