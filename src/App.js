@@ -7,6 +7,8 @@ import Schtandart from './section/schtandart';
 import AboutCompany from './section/about_company';
 import Portfolio from './section/portfolio';
 import Accordion from './section/accordion';
+import Contacts from './section/contacts';
+import Footer from './section/footer';
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
       <AboutCompany />
       <Portfolio />
       <Accordion />
+      <Contacts />
+      <Footer />
     </div>
   );
 }
