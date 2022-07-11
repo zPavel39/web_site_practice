@@ -1,3 +1,22 @@
-nav {
-    text-align: center;
+.footer {
+    padding: 60px 0;
+    background-color: $color-blue;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        color: $color-white;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        a {
+            color: $color-white;
+        }
+    }
 }

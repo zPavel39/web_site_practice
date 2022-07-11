@@ -1,0 +1,120 @@
+.contacts {
+    &__title {
+        @include title-section;
+        margin-bottom: 34px;
+    }
+    &__main {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &__left {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-bottom: 100px;
+        margin: 25px 25px 0 0;
+        h3 {
+            color: $color-text_blue;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
+    &__info {
+        &-list {
+            display: flex;
+            flex-direction: column;
+            li {
+                display: flex;
+                align-items: center;
+                gap: 26px;
+                margin: 5px 0;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                &:first-child {
+                    margin: 26px 0;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 36px;
+                }
+            }
+        }
+        &-text {
+            margin-top: 57px;
+            max-width: 202px;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        &-link {
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+        }
+    }
+    &__image {
+        position: absolute;
+        bottom: 0;
+        right: -80px;
+        z-index: 10;
+    }
+    &__form{
+        display: flex;
+        height: 564px;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: $color-white;
+        z-index: 3;
+        text-align: center;
+        padding: 55px 59px 49px 59px;
+        margin: 25px 0 25px 25px;
+        h2 {
+            @include title-section;
+            margin-bottom: 30px;
+        }
+        &-input {
+            color: $color-text_blue;
+            padding: 16px;
+            background-color: $color-input;
+            margin-bottom: 21px;
+            border-radius: 3px;
+        }
+        &-textarea {
+            height: 131px;
+            width: 100%;
+            color: $color-text_blue;
+            background-color: $color-input;
+            border-radius: 3px;
+            margin-bottom: 19px;
+            padding: 16px;
+        }
+    }
+    &__form-box {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 31px;
+        .checkbox {
+            width: 25px;
+            height: 25px;
+            background: $color-input;
+            border-radius: 3px;
+            margin-right: 10px;
+        }
+        .link {
+            color: $color-orange;
+        }
+
+    }
+    &__form-button {
+        padding: 14px 43px;
+        color: $color-white;
+        background-color: $color-blue;
+        width: 252px;
+        border-radius: 3px;
+        margin: 0 auto;
+    }
+}
