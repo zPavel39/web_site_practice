@@ -10,6 +10,8 @@ import Accordion from './section/accordion';
 import Contacts from './section/contacts';
 import Footer from './section/footer';
 
+
+
 function App() {
   return (
     <div className="App">

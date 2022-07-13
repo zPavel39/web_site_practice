@@ -91,9 +91,21 @@
                     margin-bottom:30px;
                 }
                 &__list {
-                    margin-bottom:30px;
+                    margin:15px 0 0 0;
                 }
             }
+        }
+    }
+}
+@media screen and (max-width:700px ) {
+    .products {
+        &__main{
+            .main-content{
+                width: 100%;
+            }
+        }
+            &-image {
+                display: none;
         }
     }
 }

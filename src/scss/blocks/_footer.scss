@@ -4,6 +4,7 @@
     &__container {
         display: flex;
         justify-content: space-between;
+        margin: 0 21px;
     }
     &__left {
         display: flex;
@@ -17,6 +18,11 @@
         gap: 22px;
         a {
             color: $color-white;
+        }
+    }
+    @media screen and (max-width:780px ) {
+        &__right {
+            flex-direction: column;
         }
     }
 }
