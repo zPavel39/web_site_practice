@@ -19,4 +19,9 @@
             color: $color-white;
         }
     }
+    @media screen and (max-width:780px ) {
+        &__right {
+            flex-direction: column;
+        }
+    }
 }

@@ -12,8 +12,8 @@ function Header() {
                     <img src={header_burger} class="head__burger" alt="Menu" />
                     <img src={header_logo} class="head__logo" alt="Menu" />
                 </div>
-                <nav class="header__menu menu">
-                    <ul class="menu__list">
+                <nav class="header__menu  ">
+                    <ul class="menu__list clearfix menu">
                         <li class="menu__item">
                             <a href="index.html" class="menu__link">Услуги</a>
                         </li>

@@ -52,4 +52,27 @@
             background-image: url("/img/schtandart_background2.png");
         }
     }
+    @media screen and (max-width: 823px) {
+        &__info {
+            &-logo {
+                margin: 35px 0 24px 0;
+            }
+        }
+        .info-list {
+            &__blocks {
+                img {
+                    margin: 0 70px 5px 70px;
+                }
+                span {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 585px) {
+        &__info {
+            background-image:none;
+            background-color: $color-blue;
+    }
+}
 }
