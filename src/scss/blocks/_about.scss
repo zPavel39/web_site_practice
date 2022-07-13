@@ -98,7 +98,19 @@
                 width: 277px;        
             }
         }
-    }   
+    }
+    @media screen and (max-width: 720px) {
+        &__description-right{
+            display: none;
+        }
+        &__description-left {
+            width: 100%;
+            padding: 20px 52px 20px 28px;
+            p {
+                width: 277px;        
+            }
+        }
+    }
     &__button{
         display: flex;
         justify-content:space-around;
