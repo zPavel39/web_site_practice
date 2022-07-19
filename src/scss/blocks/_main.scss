@@ -2,7 +2,6 @@
     position: relative;
     padding-bottom: 68px;
     background-color: $color-body;
-    overflow: hidden;
     .main__backgraun-style{
         display: flex;
         justify-content: center;
@@ -33,8 +32,6 @@
 }
 .section-info {
     position: relative;
-    overflow: hidden;
-    margin-left: 56px;
     &__block {
         display: flex;
         flex-direction: column;
