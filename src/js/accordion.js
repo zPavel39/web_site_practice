@@ -1,5 +1,7 @@
-const acc = document.getElementsByClassName("accordion__block-btn");
-let i;
+
+function accordActive() {
+  let acc = document.getElementsByClassName("accordion__block-btn");
+  let i;
   
   for (i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
@@ -10,5 +12,7 @@ let i;
       } else {
         panel.style.maxHeight = panel.scrollHeight + "px";
       } 
-    });
-  }  
+    })
+  }
+}
+export default accordActive

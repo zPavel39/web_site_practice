@@ -1,4 +1,3 @@
-import './scss/App.scss';
 import Header from './section/Header';
 import Main from './section/Main';
 import OurServices from './section/our-services';
@@ -11,10 +10,9 @@ import Contacts from './section/contacts';
 import Footer from './section/footer';
 
 
-
 function App() {
   return (
-    <div className="App">
+    <div className="wraper">
       <Header />
       <Main />
       <OurServices />
