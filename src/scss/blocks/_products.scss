@@ -16,6 +16,7 @@
                 background-color: $color-body;
                 padding: 10px 25px;
                 border-radius: 3px;
+                transition: all 0.3s;
             }
             :hover {
                 background-color: $color-orange;
@@ -86,7 +87,7 @@
             }
             .main-content{
                 width: 60%;
-                margin: 74px 10px 22px 25px;
+                margin: 40px 10px 22px 25px;
                 &__title {
                     margin-bottom:30px;
                 }

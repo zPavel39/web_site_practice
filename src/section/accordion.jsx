@@ -1,7 +1,5 @@
 import React from "react";
 import '../scss/App.scss';
-import '../js/accordion';
-
 
 function Accordion() {
     return <>
@@ -47,6 +45,3 @@ function Accordion() {
     </>
   }
   export default Accordion;
-
-
-

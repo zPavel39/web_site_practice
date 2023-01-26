@@ -2,7 +2,6 @@
     position: relative;
     padding-bottom: 68px;
     background-color: $color-body;
-    overflow: hidden;
     .main__backgraun-style{
         display: flex;
         justify-content: center;
@@ -10,11 +9,16 @@
             display: none;
             @media screen and (max-width: 920px) {
                 display: flex;
+                object-fit: cover;
             }
         }
-        @media screen and (max-width: 920px) {
-            justify-content: flex-start;
-            .bg_image1 {
+        .bg_image1 {
+            display: flex;
+            width: 100%;
+            height: 562px;
+            object-fit: cover;
+            @media screen and (max-width: 920px) {
+                justify-content: flex-start;
                 display: none;
             }
         }
@@ -33,8 +37,6 @@
 }
 .section-info {
     position: relative;
-    overflow: hidden;
-    margin-left: 56px;
     &__block {
         display: flex;
         flex-direction: column;
